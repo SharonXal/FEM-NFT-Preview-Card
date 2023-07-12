@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Outfit';
+    font-size: 18px;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#card-container{
+    width: 345px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+
+#cube-img{
+    width: 100%;
+    border-radius: 10px;
+}
+#view-img{
+    opacity: 0;
+    position:absolute;
+    top: 36.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate((-50%, -50%));
+}
+h2{
+    color: white;
+}
+#description{
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: hsl(215, 51%, 70%);
+    opacity: 0.6;
+}
+
+#price-time{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+#price{
+    display: flex;
+    flex-direction: row;
+}
+#price-img{
+    align-self: center;
+    margin-right: 7px;
+}
+#price p{
+    color: hsl(178, 100%, 50%);
+    font-size: 0.8rem;
+}
+#time{
+    display: flex;
+    flex-direction: row;
+}
+#clock{
+    align-self: center;
+    margin-left: -110px;
+    margin-right: 7px;
+}
+#time p{
+    color: hsl(215, 51%, 70%);
+    font-size: 0.8rem;
+}
+
+#hrline{
+    width: 100%;
+}
+
+#credit{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+#creator{
+    width: 35px;
+    margin-right: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+#credit p{
+    color: hsl(215, 51%, 70%);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+#credit p#creator-name{
+    color: white;
+    font-weight: 400;
+}
+
+@media (min-width: 576px){
+
+    
+#img:hover{
+    display: flex;
+    align-items: center;
+    background: rgba(0, 255, 247, 0.5);
+    border-radius: 10px;
+}
+#cube-img:hover{
+    opacity: 0.3;
+}
+#view-img:hover{
+    opacity: 1;
+    cursor: pointer;
+    position:absolute;
+    top: 36.4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate((-50%, -50%));
+    border-radius: 10px;
+    padding: 130px;
+    background: rgba(0, 255, 247, 0.5);
+}
+
+    #eq-img-text h2:hover{
+        color: hsl(178, 100%, 50%);
+        cursor: pointer;
+    }
+
+    #credit p#creator-name:hover{
+        color: hsl(178, 100%, 50%);
+        font-weight: 600;
+        cursor: pointer;
+    }
+}
